@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   swcMinify: true,
-}
+  // useFileSystemPublicRoutes: false,
+  poweredByHeader: false,
+  env: {
+    environment: process.env.NODE_ENV,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
